@@ -1,0 +1,9 @@
+Authentication Requirements 
+1. User sign up / register with email and password.
+2. A verify email would be sent to the user.
+3. User verifies email account and account becomes valid.
+4. User clicks on Forgotten password link a form to input email is shown.
+5. Email containing a link to reset password is sent to user.
+6. User resets password.
+7. When the user login a token is sent to the user .
+This token would be used to make request to protected routes
