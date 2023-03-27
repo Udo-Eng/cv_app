@@ -1,13 +1,15 @@
-import './App.css';
-import Register from './pages/Register/Register';
+import Register from "./pages/Register/Register";
+import DashBoard from "./pages/DashBoard/DashBoard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-          <div>
-                <Register />
-          </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Register />} />
+        <Route path="/dashboard/*" element={<DashBoard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

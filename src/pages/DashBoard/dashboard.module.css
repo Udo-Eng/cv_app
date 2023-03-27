@@ -1,0 +1,12 @@
+.appcontainer{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.appbody{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}

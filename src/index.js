@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+
+//Import the user auth context provider to provide the userAuth state
+import UserAuthProvider from "./context/UserAuthProvider";
 
 
-
-// This is where react is hooked to the Browser DOM 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+      <UserAuthProvider>
+        <App />
+      </UserAuthProvider>
   </React.StrictMode>
 );
-
-

@@ -1,0 +1,33 @@
+.appheader{
+    height: 4rem;
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.appheader h3{
+    margin-left: 2rem;
+}
+
+.appheaderNav{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem 0 0.5rem; 
+    margin-left: auto 
+}
+
+.appheaderNav div {
+    margin-right: 1rem;
+}
+
+.avatar{
+    width: 32px;
+    height: 32px;
+    border : 1px solid transparent;
+    border-radius: 50%;
+    background-color: skyblue;
+}
